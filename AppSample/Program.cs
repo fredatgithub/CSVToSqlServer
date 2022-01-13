@@ -57,7 +57,7 @@ namespace AppSample
 
     private static void Insert(DataTable dtData)
     {
-      SqlConnection con = new SqlConnection(@"Data Source=COBOGPGP8468\SQLSERVER;Initial Catalog=NetSamples;Integrated Security=True");
+      SqlConnection con = new SqlConnection(@"Data Source=PCName\SQLSERVER;Initial Catalog=NetSamples;Integrated Security=True");
       SqlCommand cmd = new SqlCommand("InsertCountries", con);
       cmd.CommandType = CommandType.StoredProcedure;
       cmd.Parameters.AddWithValue("@dtCountry", dtData);
